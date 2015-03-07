@@ -25,6 +25,8 @@ module Firmata
     SYSTEM_RESET = 0xFF
     # Internal: Fixnum byte command for digital I/O message
     DIGITAL_MESSAGE = 0x90
+    # Internal: Fixnum byte command for neopixel test message
+    NEOPIXEL = 0x91
     # Pubilc: Fixnum byte for range for digital pins for digital 2 byte data format
     DIGITAL_MESSAGE_RANGE = 0x90..0x9F
     # Internal: Fixnum byte command for an analog I/O message

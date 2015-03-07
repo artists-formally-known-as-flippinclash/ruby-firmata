@@ -117,6 +117,10 @@ module Firmata
       write(DIGITAL_MESSAGE | port, port_value & 0x7F, (port_value >> 7) & 0x7F)
     end
 
+    def neopixel_write
+      write(NEOPIXEL)
+    end
+
     # Public: Write an analog messege.
     #
     # pin   - The Integer pin to write to.
