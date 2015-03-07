@@ -11,6 +11,7 @@ module Firmata
     ANALOG = 0x02
     PWM    = 0x03
     SERVO  = 0x04
+    NEOPIXEL = 0x08
   end
 
   module PinLevels
@@ -25,8 +26,6 @@ module Firmata
     SYSTEM_RESET = 0xFF
     # Internal: Fixnum byte command for digital I/O message
     DIGITAL_MESSAGE = 0x91
-    # Internal: Fixnum byte command for neopixel test message
-    NEOPIXEL = 0x91
     # Pubilc: Fixnum byte for range for digital pins for digital 2 byte data format
     DIGITAL_MESSAGE_RANGE = 0x90..0x9F
     # Internal: Fixnum byte command for an analog I/O message
@@ -72,6 +71,9 @@ module Firmata
     I2C_MODE_CONTINUOUS_READ = 0x02
     # Internal: Fixnum byte i2c mode stop reading
     I2C_MODE_STOP_READING = 0x03
+
+    # Internal: Fixnum byte command for neopixel test message
+    NEOPIXEL_DATA = 0x72
   end
 
   class Board
