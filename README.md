@@ -1,3 +1,7 @@
+:wave: This was a hack for Clash of the Coders at Big Nerd Ranch. Check out the extraction https://github.com/iamvery/artoo-neopixel :wave:
+
+---
+
 # Firmata
 
 A Ruby implementation of the [Firmata protocol](http://firmata.org/wiki/V2.3ProtocolDetails).
